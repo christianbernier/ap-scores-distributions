@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
 
-const scores = `2020,United States History,0.13,0.192,0.266,0.204,0.21
+const scores = `2020,Japanese Lang. and Culture,0.539,0.096,0.201,0.076,0.088
+2020,Biology,0.094,0.225,0.366,0.242,0.073
+2020,Government and Politics US,0.153,0.162,0.251,0.218,0.216
+2020,Government and Politics Comp.,0.243,0.273,0.184,0.173,0.127
+2020,Music Theory,0.238,0.189,0.252,0.22,0.101
+2020,Art History,0.156,0.246,0.277,0.214,0.107
+2020,United States History,0.13,0.192,0.266,0.204,0.21
 2020,Computer Science Principles,0.108,0.233,0.366,0.175,0.118
 2020,Drawing,0.155,0.403,0.333,0.098,0.012
 2020,2-D Art and Design,0.121,0.362,0.412,0.098,0.006
