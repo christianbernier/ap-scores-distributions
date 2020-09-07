@@ -1,18 +1,43 @@
 import React, { useEffect } from "react";
 
-const scores = `2020,Japanese Lang. and Culture,0.539,0.096,0.201,0.076,0.088
-2020,Biology,0.094,0.225,0.366,0.242,0.073
-2020,Government and Politics US,0.153,0.162,0.251,0.218,0.216
-2020,Government and Politics Comp.,0.243,0.273,0.184,0.173,0.127
-2020,Music Theory,0.238,0.189,0.252,0.22,0.101
-2020,Art History,0.156,0.246,0.277,0.214,0.107
-2020,United States History,0.13,0.192,0.266,0.204,0.21
-2020,Computer Science Principles,0.108,0.233,0.366,0.175,0.118
-2020,Drawing,0.155,0.403,0.333,0.098,0.012
-2020,2-D Art and Design,0.121,0.362,0.412,0.098,0.006
-2020,3-D Art and Design,0.072,0.32,0.365,0.209,0.036
-2020,AP Seminar,0.064,0.145,0.597,0.172,0.023
-2020,AP Research,0.088,0.321,0.315,0.25,0.026
+const scores = `2020,Calculus AB,0.19,0.20,0.21,0.24,0.16
+2020,Calculus BC,0.44,0.17,0.19,0.14,0.05
+2020,Chemistry,0.10,0.18,0.26,0.24,0.21
+2020,European History,0.14,0.20,0.26,0.29,0.12
+2020,French Language,0.23,0.32,0.28,0.12,0.05
+2020,Human Geography,0.12,0.22,0.25,0.11,0.31
+2020,Psychology,0.22,0.25,0.23,0.10,0.19
+2020,Chinese Lang. and Culture,0.55,0.16,0.18,0.05,0.06
+2020,English Language,0.13,0.20,0.29,0.26,0.12
+2020,Environmental Science,0.12,0.28,0.13,0.25,0.22
+2020,Italian Language and Culture,0.19,0.17,0.40,0.20,0.05
+2020,Latin,0.16,0.20,0.32,0.18,0.14
+2020,Spanish Language,0.31,0.36,0.23,0.09,0.01
+2020,Spanish Literature,0.17,0.18,0.38,0.21,0.07
+2020,Statistics,0.16,0.21,0.23,0.22,0.19
+2020,Computer Science A,0.25,0.21,0.23,0.13,0.18
+2020,Macroeconomics,0.20,0.25,0.18,0.16,0.21
+2020,Microeconomics,0.23,0.29,0.17,0.14,0.18
+2020,Physics 1 - Algebra Based,0.09,0.18,0.25,0.26,0.23
+2020,Physics 2 - Algebra Based,0.14,0.24,0.35,0.22,0.06
+2020,Physics C E&M,0.40,0.22,0.12,0.16,0.10
+2020,Physics C Mech.,0.41,0.26,0.16,0.10,0.08
+2020,World History,0.09,0.23,0.28,0.26,0.14
+2020,Art History,0.16,0.25,0.28,0.21,0.11
+2020,Biology,0.09,0.23,0.37,0.24,0.07
+2020,English Literature,0.09,0.17,0.34,0.28,0.12
+2020,German Language,0.24,0.34,0.16,0.20,0.07
+2020,"Government and Politics Comp.",0.24,0.27,0.18,0.17,0.13
+2020,"Government and Politics US",0.15,0.16,0.25,0.22,0.22
+2020,Japanese Lang. and Culture,0.54,0.10,0.20,0.08,0.09
+2020,Music Theory,0.24,0.19,0.25,0.22,0.10
+2020,2-D Art and Design,0.12,0.36,0.41,0.10,0.01
+2020,3-D Art and Design,0.07,0.32,0.37,0.21,0.04
+2020,AP Research,0.09,0.32,0.32,0.25,0.03
+2020,AP Seminar,0.06,0.15,0.60,0.17,0.02
+2020,Computer Science Principles,0.11,0.23,0.37,0.18,0.12
+2020,Drawing,0.16,0.40,0.33,0.10,0.01
+2020,United States History,0.13,0.19,0.27,0.20,0.21
 2019,Environmental Science,0.095,0.259,0.142,0.255,0.249
 2019,Human Geography,0.107,0.183,0.201,0.169,0.339
 2019,Macroeconomics,0.176,0.229,0.174,0.153,0.269
