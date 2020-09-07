@@ -27,8 +27,8 @@ const scores = `2020,Calculus AB,0.19,0.20,0.21,0.24,0.16
 2020,Biology,0.09,0.23,0.37,0.24,0.07
 2020,English Literature,0.09,0.17,0.34,0.28,0.12
 2020,German Language,0.24,0.34,0.16,0.20,0.07
-2020,"Government and Politics Comp.",0.24,0.27,0.18,0.17,0.13
-2020,"Government and Politics US",0.15,0.16,0.25,0.22,0.22
+2020,Government and Politics Comp.,0.24,0.27,0.18,0.17,0.13
+2020,Government and Politics US,0.15,0.16,0.25,0.22,0.22
 2020,Japanese Lang. and Culture,0.54,0.10,0.20,0.08,0.09
 2020,Music Theory,0.24,0.19,0.25,0.22,0.10
 2020,2-D Art and Design,0.12,0.36,0.41,0.10,0.01
