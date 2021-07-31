@@ -39,6 +39,7 @@ export default () => {
             padding: 0;
             margin: 0;
             background-color: #f7fafc;
+            width: 100vw;
           }
 
           p {

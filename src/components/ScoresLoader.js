@@ -1,6 +1,44 @@
 import React, { useEffect } from "react";
 
-const scores = `2020,Calculus AB,0.19,0.20,0.21,0.24,0.16
+const scores = `2021,Physics C E&M,0.33,0.23,0.14,0.18,0.12
+2021,Physics C Mech.,0.23,0.29,0.21,0.15,0.12
+2021,Physics 1 - Algebra Based,0.07,0.16,0.19,0.27,0.31
+2021,Physics 2 - Algebra Based,0.15,0.18,0.32,0.27,0.08
+2021,Statistics,0.16,0.20,0.22,0.17,0.25
+2021,Calculus AB,0.18,0.14,0.19,0.25,0.24
+2021,Calculus BC,0.38,0.17,0.20,0.18,0.07
+2021,AP Research,0.14,0.26,0.42,0.14,0.04
+2021,AP Seminar,0.11,0.19,0.55,0.11,0.04
+2021,Chemistry,0.11,0.16,0.24,0.25,0.24
+2021,English Language,0.08,0.23,0.26,0.31,0.12
+2021,Macroeconomics,0.18,0.20,0.14,0.16,0.32
+2021,Microeconomics,0.20,0.24,0.16,0.17,0.23
+2021,Computer Science A,0.25,0.22,0.20,0.12,0.21
+2021,Computer Science Principles,0.13,0.22,0.32,0.20,0.13
+2021,Comp. Government and Politics,0.17,0.24,0.31,0.15,0.13
+2021,US Government and Politics,0.11,0.11,0.27,0.27,0.23
+2021,Biology,0.07,0.20,0.34,0.30,0.10
+2021,Environmental Science,0.06,0.24,0.18,0.28,0.23
+2021,European History,0.14,0.20,0.25,0.30,0.11
+2021,Italian Language and Culture,0.21,0.23,0.29,0.18,0.09
+2021,Psychology,0.15,0.22,0.18,0.14,0.31
+2021,United States History,0.11,0.16,0.21,0.22,0.30
+2021,World History,0.10,0.18,0.24,0.30,0.18
+2021,Human Geography,0.15,0.20,0.19,0.16,0.31
+2021,Art History,0.11,0.19,0.24,0.30,0.16
+2021,English Literature,0.05,0.12,0.27,0.39,0.17
+2021,2-D Art and Design,0.10,0.35,0.42,0.12,0.01
+2021,3-D Art and Design,0.07,0.29,0.36,0.25,0.04
+2021,Drawing,0.14,0.38,0.35,0.12,0.01
+2021,Music Theory,0.20,0.18,0.23,0.23,0.16
+2021,Latin,0.10,0.17,0.30,0.25,0.18
+2021,Spanish Literature,0.08,0.21,0.36,0.25,0.10
+2021,Chinese Lang. and Culture,0.57,0.15,0.16,0.05,0.07
+2021,French Language,0.13,0.23,0.35,0.22,0.07
+2021,German Language,0.18,0.19,0.28,0.24,0.11
+2021,Japanese Lang. and Culture,0.47,0.09,0.18,0.08,0.18
+2021,Spanish Language,0.17,0.30,0.33,0.17,0.03
+2020,Calculus AB,0.19,0.20,0.21,0.24,0.16
 2020,Calculus BC,0.44,0.17,0.19,0.14,0.05
 2020,Chemistry,0.10,0.18,0.26,0.24,0.21
 2020,European History,0.14,0.20,0.26,0.29,0.12
@@ -27,8 +65,8 @@ const scores = `2020,Calculus AB,0.19,0.20,0.21,0.24,0.16
 2020,Biology,0.09,0.23,0.37,0.24,0.07
 2020,English Literature,0.09,0.17,0.34,0.28,0.12
 2020,German Language,0.24,0.34,0.16,0.20,0.07
-2020,Government and Politics Comp.,0.24,0.27,0.18,0.17,0.13
-2020,Government and Politics US,0.15,0.16,0.25,0.22,0.22
+2020,Comp. Government and Politics,0.24,0.27,0.18,0.17,0.13
+2020,US Government and Politics,0.15,0.16,0.25,0.22,0.22
 2020,Japanese Lang. and Culture,0.54,0.10,0.20,0.08,0.09
 2020,Music Theory,0.24,0.19,0.25,0.22,0.10
 2020,2-D Art and Design,0.12,0.36,0.41,0.10,0.01
@@ -74,8 +112,8 @@ const scores = `2020,Calculus AB,0.19,0.20,0.21,0.24,0.16
 2019,German Language,0.184,0.239,0.282,0.208,0.087
 2019,Italian Language and Culture,0.118,0.177,0.351,0.259,0.095
 2019,Spanish Language,0.249,0.346,0.295,0.093,0.017
-2019,Government and Politics Comp.,0.222,0.248,0.192,0.187,0.2
-2019,Government and Politics US,0.129,0.124,0.299,0.248,0.2
+2019,Comp. Government and Politics,0.222,0.248,0.192,0.187,0.2
+2019,US Government and Politics,0.129,0.124,0.299,0.248,0.2
 2018,Macroeconomics,0.18,0.23,0.17,0.17,0.25
 2018,Microeconomics,0.19,0.28,0.20,0.16,0.17
 2018,Environmental Science,0.09,0.24,0.15,0.26,0.26
@@ -90,8 +128,8 @@ const scores = `2020,Calculus AB,0.19,0.20,0.21,0.24,0.16
 2018,Chemistry,0.13,0.17,0.25,0.24,0.21
 2018,Art History,0.13,0.24,0.28,0.26,0.10
 2018,European History,0.12,0.20,0.26,0.30,0.12
-2018,Government and Politics US,0.13,0.13,0.27,0.25,0.22
-2018,Government and Politics Comp.,0.21,0.23,0.20,0.21,0.16
+2018,US Government and Politics,0.13,0.13,0.27,0.25,0.22
+2018,Comp. Government and Politics,0.21,0.23,0.20,0.21,0.16
 2018,United States History,0.10,0.18,0.23,0.23,0.26
 2018,World History,0.09,0.20,0.28,0.29,0.15
 2018,Spanish Literature,0.09,0.24,0.37,0.22,0.08
@@ -124,8 +162,8 @@ const scores = `2020,Calculus AB,0.19,0.20,0.21,0.24,0.16
 2017,Physics C Mech.,0.35,0.28,0.16,0.13,0.08
 2017,Art History,0.11,0.23,0.27,0.26,0.12
 2017,Human Geography,0.11,0.17,0.21,0.17,0.34
-2017,Government and Politics Comp.,0.24,0.25,0.21,0.18,0.13
-2017,Government and Politics US,0.11,0.13,0.26,0.25,0.26
+2017,Comp. Government and Politics,0.24,0.25,0.21,0.18,0.13
+2017,US Government and Politics,0.11,0.13,0.26,0.25,0.26
 2017,Chemistry,0.09,0.16,0.26,0.27,0.22
 2017,AP Seminar,0.07,0.15,0.65,0.12,0.02
 2017,Spanish Literature,0.09,0.26,0.38,0.20,0.06
@@ -172,7 +210,7 @@ export default ({ update }) => {
     }
 
     let exams = [];
-    let currentYear = 2020;
+    let currentYear = 2021;
     let currentExams = [];
     for (const e of allExams) {
       if (e.year !== currentYear) {

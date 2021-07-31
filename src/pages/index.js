@@ -47,7 +47,7 @@ export default () => {
               margin-top: -30px;
             `}
           >
-            See the distributions of scores on every AP exam in 2020 (and a few
+            See the distributions of scores on every AP exam in 2021 (and a few
             years back). Distributions are updated quickly after they are
             released.
           </p>
@@ -164,7 +164,7 @@ export default () => {
               text-align: center;
             `}
           >
-            AP Scores Distributions v.1.0 © 2020 to Christian Bernier — AP and Advanced
+            AP Scores Distributions v.1.0.1 © 2020–2021 to Christian Bernier — AP and Advanced
             Placement are registered trademarks of the College Board, which was
             not involved in the production of, and does not endorse, this
             product. — All data is from <a
